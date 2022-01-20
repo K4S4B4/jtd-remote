@@ -1,7 +1,7 @@
 ---
 title: Install TensorRT
 parent: How to install
-grand parent: English
+grand_parent: English
 nav_order: 1
 ---
 
