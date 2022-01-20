@@ -7,7 +7,7 @@ nav_order: 1
 # What is MocapForAll?
 
 ## Motion capture software for everyone
-<img src="App-Demo.gif" alt="App-Demo" style="zoom:80%;" />
+<img src="{{ site.url }}{{ site.baseurl }}/asset/images/App-Demo.gif" alt="App-Demo" style="zoom:80%;" />
 
 ### No special equipment required
 
