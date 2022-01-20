@@ -1,15 +1,15 @@
 ---
 title: From BOOTH
 parent: How to install
-grand parent: English
-nav_order: 2
+grand_parent: English
+nav_order: 1
 ---
 
 # Install and update from BOOTH
 
 ## How to download
 ### Free trial version
-Free trial version is available on [BOOTH](https://akiya-souken.booth.pm/items/3026474) or [Steam](https://store.steampowered.com/app/1759710/MocapForAll/).  
+Free trial version is available on [BOOTH](https://akiya-souken.booth.pm/items/3026474).  
 
 Before purchase, it is required to try free version and confirm that the software works without problems in your environment.   
 In the free version, there are limitations on data export functions.  
@@ -25,7 +25,7 @@ https://vrlab.akiya-souken.co.jp/product#buy
 You need a pixiv account to purchase at BOOTH.
 
 ## How to install
-You can install MocapForAll [manually](#Manual-installation) or by using [network installer](#Installation-by-Network-Installer) from BOOTH.  
+You can install MocapForAll [manually](#manual-installation) or by using [network installer](#installation-by-network-installer) from BOOTH.  
 
 ### Manual installation
 
@@ -52,7 +52,7 @@ There are four Appendix as follows:
 ##### How to install Appendix
 1. Download and unzip "AppendixN_xxxxx_yyyyy.zip".
 2. Overwrite "MocapForAll_Full_vN.N.N\MocapForAll" with "AppendixN_xxxxx_yyyyy\MocapForAll".
-3. If you install "Appendix4_TensorRT_mode", follow the [installation guide](./install-tensorrt).
+3. If you install "Appendix4_TensorRT_mode", follow the [installation guide of TensorRT](./install-tensorrt).
 
 
 ### Installation by Network Installer
@@ -62,13 +62,12 @@ There are four Appendix as follows:
 
 3. Select the required Appendix. See [Appendix](#Appendix-optional) for the contents.
 
-   To use "Appendix4_TensorRT_mode", see [Installation of TensorRT](#Installation-of-TensorRT) and install the required software.
+   To use "Appendix4_TensorRT_mode", see [Installation of TensorRT](./install-tensorrt) and install the required software.
 
 4. Run MocapForAll from the Start menu or MocapForAll.exe in the installation path.
 
 5. If the "UE4 Prerequisites" installation screen is displayed, install it.
 
-If you bought on Steam, you can just install by Steam client.  
 
 ## How to update from BOOTH
 
@@ -84,4 +83,3 @@ Same as installation.
 If you wan to reduce the data size to download, select only "Main Files" in "Select Components" screen without selecting "Appendix" and execute installation.   
 Since the installer does not delete files, the previous Appendix remains .  
 After that, Appendix will be treated as not installed on the "Select Components" screen of the installer, but this cause no problem.
-
