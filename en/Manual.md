@@ -32,7 +32,7 @@ nav_order: 1
 # What is MocapForAll?
 
 ## Motion capture software for everyone
-<img src="App-Demo.gif" alt="App-Demo" style="zoom:80%;" />
+<img src="{{ site.url }}{{ site.baseurl }}/App-Demo.gif" alt="App-Demo" style="zoom:80%;" />
 
 ### No special equipment required
 
@@ -50,7 +50,7 @@ For examples, it runs at
 - around 17 fps on Surface Pro 7 which does not have a dedicated GPU
 - 30 to 60 fps on GTX 1080 Ti
 
-### Cheap (JPY9999)
+### Cheap
 An option for projects with limited budgets, such as indie games, indie films, or education.
 ## What you can do with MocapForAll
 - You can output captured motion to the network via VMT protocol(\*1) and [VMC protocol](https://protocol.vmc.info/) in real time(\*2). 
@@ -64,14 +64,14 @@ An option for projects with limited budgets, such as indie games, indie films, o
 
 By using these, you can do the followings, as well as  you can even create your own programs to receive data since the output specifications are open to public.
 
-<img src="App-Overview.png" alt="App-Overview" style="zoom: 80%;" /> 
+<img src="{{ site.url }}{{ site.baseurl }}/App-Overview.png" alt="App-Overview" style="zoom: 80%;" /> 
 
 ### Use in SteamVR via Virtual Motion Tracker
 Through [Virtual Motion Tracker](https://gpsnmeajp.github.io/VirtualMotionTrackerDocument/), the capture motion can be used as virtual trackers in applications running on SteamVR.
 
-### Use in UnrealEngine4, UnrealEngine5, Unity
+### Use in Unreal Engine4, Unreal Engine5, Unity
 
-You can send the captured motion to UnrealEngine4, UnrealEngine5, or Unity for game development or video production.  
+You can send the captured motion to Unreal Engine4, Unreal Engine5, or Unity for game development or video production.  
 
 - Plugins for linking data directly to UE4, UE5, or Unity are available [here](https://booth.pm/ja/items/3026430).  
 - As described in [Use in other apps via VMC protocol](#Use-in-other-apps-via-VMC-protocol), it is also possible to link by EVMC4U and VMC4UE using VMC Protocol.
@@ -94,24 +94,28 @@ You can save the captured motion as BVH files. It can be used with Blender etc.
 # How to install MocapForAll
 ## How to download
 ### Free trial version
-Free trial version is available at BOOTH:  
-https://akiya-souken.booth.pm/items/3026474
+Free trial version is available on [BOOTH](https://akiya-souken.booth.pm/items/3026474) or [Steam](https://store.steampowered.com/app/1759710/MocapForAll/).  
 
 Before purchase, it is required to try free version and confirm that the software works without problems in your environment.   
-In this free version, there are limitations on data export functions.  
+In the free version, there are limitations on data export functions.  
 
 - Data sending via VMT protocol and VMC protocol stops and restarts every 10 seconds
 - Maximum frames in a BVH file is limited to 300
 
 ### Paid version
+#### Buy on BOOTH
 Before purchase, please read and accept the terms and conditions from the following link.  
 If you agree, you can get your purchase password and proceed to the purchase page at BOOTH.  
 https://vrlab.akiya-souken.co.jp/product#buy
 
 You need a pixiv account to purchase at BOOTH.
 
-## How to install
-You can install MocapForAll [manually](#Manual-installation) or by using [network installer](#Installation-by-Network-Installer).  
+#### Buy on [Steam](https://store.steampowered.com/app/1759710/MocapForAll/)
+Before purchase, please read and accept the terms and conditions from the following link.  
+https://store.steampowered.com//eula/1759710_eula_0
+
+## How to install from BOOTH
+You can install MocapForAll [manually](#Manual-installation) or by using [network installer](#Installation-by-Network-Installer) from BOOTH.  
 
 ### Manual installation
 
@@ -164,9 +168,9 @@ From now on, we will only explain the case of **other than RTX30\*\* series**. I
 
 1. Install [CUDA 11.0.3](https://developer.nvidia.com/cuda-11.0-update1-download-archive?target_os=Windows&target_arch=x86_64&target_version=10&target_type=exenetwork)   
     Please note that the installer may fail to install the NVIDIA driver. In that case, please install the latest NVIDIA driver manually.    
-    <img src="Install-TensorRT-CUDA.png" alt="CUDA" style="zoom:80%;" />  
+    <img src="{{ site.url }}{{ site.baseurl }}/Install-TensorRT-CUDA.png" alt="CUDA" style="zoom:80%;" />  
 2. Download and unzip [cuDNN v8.0.2 (July 24th, 2020), for CUDA 11.0](https://developer.nvidia.com/rdp/cudnn-archive)  
-    <img src="Install-TensorRT-cuDNN.png" alt="cuDNN" style="zoom:50%;" />  
+    <img src="{{ site.url }}{{ site.baseurl }}/Install-TensorRT-cuDNN.png" alt="cuDNN" style="zoom:50%;" />  
 3. Overwrite the following folders  
     * C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.0\bin
     * C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.0\include
@@ -181,7 +185,7 @@ From now on, we will only explain the case of **other than RTX30\*\* series**. I
 4. Add an environment variable "CUDNN_PATH", and set its value to "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.0".  
 5. Download and unzip [TensorRT7.1.3.4](https://developer.nvidia.com/nvidia-tensorrt-7x-download)
     Note that a Nvidia account is required.  
-    <img src="Install-TensorRT.png" alt="TensorRT" style="zoom:50%;" />  
+    <img src="{{ site.url }}{{ site.baseurl }}/Install-TensorRT.png" alt="TensorRT" style="zoom:50%;" />  
 
 6. Add the path of lib folder in that to the environment variable "PATH", for example "C:\Program Files\NVIDIA GPU Computing Toolkit\TensorRT-7.1.3.4\lib"  
 
@@ -213,7 +217,9 @@ From now on, we will only explain the case of **other than RTX30\*\* series**. I
 
 5. If the "UE4 Prerequisites" installation screen is displayed, install it.
 
-## How to update
+If you bought on Steam, you can just install by Steam client.  
+
+## How to update from BOOTH
 
 ### Manual update
 
@@ -227,6 +233,11 @@ Same as installation.
 If you wan to reduce the data size to download, select only "Main Files" in "Select Components" screen without selecting "Appendix" and execute installation.   
 Since the installer does not delete files, the previous Appendix remains .  
 After that, Appendix will be treated as not installed on the "Select Components" screen of the installer, but this cause no problem.
+
+## How to install and update from Steam
+You can just install and update using Steam client app.  
+Note that all [Appendix](#appendix-optional) are installed automatically.  
+You need to manually [install CUDA, cuDNN, and TensorRT](#installation-of-tensorrt) to use GPU acceleration by TensorRT.  
 
 # How to use 1: Preparations to capture motion
 
@@ -262,7 +273,7 @@ It is recommended to place the camera at 45 degree left and right from the front
 If the capture target and the two cameras are positioned in a straight line, the accuracy tend to be poor because the depth information is insufficient.  
 This is an example of our camera placement:  
 
-  <img src="Camera-Placing.png" alt="カメラの設置位置" style="zoom: 50%;" />  
+  <img src="{{ site.url }}{{ site.baseurl }}/Camera-Placing.png" alt="カメラの設置位置" style="zoom: 50%;" />  
 
 
 
@@ -516,7 +527,7 @@ In addition to the procedure described up to the previous section, you need to a
 As a prerequisite for subsequent operations, use the WASD key and mouse drag to move the viewport on MocapForAll.  
 Screen maximization can be turned on and off with F11 key.  
 
-<img src="App-wasd.png" alt="App-wasd" style="zoom:50%;" />　
+<img src="{{ site.url }}{{ site.baseurl }}/App-wasd.png" alt="App-wasd" style="zoom:50%;" />　
 
 ### Adjust the scales
 
@@ -728,7 +739,7 @@ As described in [Install Virtual Motion Tracker](#Install-Virtual-Motion-Tracker
 - Load the same VRM model with the other app linking via VMC protocol.  
   To load the VRM model, drag and drop the VRM file into the MocapForAll window when the capture stopped. 
 
-<img src="Settings-General-Character-VRM.gif" alt="Settings-General-Character-VRM" style="zoom:50%;" />　　
+<img src="{{ site.url }}{{ site.baseurl }}/Settings-General-Character-VRM.gif" alt="Settings-General-Character-VRM" style="zoom:50%;" />　　
 
 ### Send motion data
 
@@ -837,17 +848,17 @@ You can export bone transform and facial expression raw data to shared memory.
 
 The orientation and position of 15 bones are exported in the similar format as the Body data. The arrangement of bones is as follows.
 
-<img src="DataFormat-SharedMemory-Hand.png" alt="DataFormat-SharedMemory-Hand" style="zoom: 33%;" /> 
+<img src="{{ site.url }}{{ site.baseurl }}/DataFormat-SharedMemory-Hand.png" alt="DataFormat-SharedMemory-Hand" style="zoom: 33%;" /> 
 
 #### Face
 
 Only positions (no rotations) are exported for 468 face landmarks. The position is represented by a three-dimensional value with the XY coordinates in pixels in the camera image cropped to the area of the face and the Z coordinate of the same scale in the depth direction.
 
-<img src="DataFormat-SharedMemory-Face1.png" alt="DataFormat-SharedMemory-Face1" style="zoom: 65%;" /> 
+<img src="{{ site.url }}{{ site.baseurl }}/DataFormat-SharedMemory-Face1.png" alt="DataFormat-SharedMemory-Face1" style="zoom: 65%;" /> 
 
 Enlarge the image below to see where each landmark corresponds to your face.
 
-<img src="DataFormat-SharedMemory-Face.jpg" alt="DataFormat-SharedMemory-Face" style="zoom: 10%;" /> 
+<img src="{{ site.url }}{{ site.baseurl }}/DataFormat-SharedMemory-Face.jpg" alt="DataFormat-SharedMemory-Face" style="zoom: 10%;" /> 
 
 #### Eye
 
