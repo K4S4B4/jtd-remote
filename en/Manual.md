@@ -32,7 +32,7 @@ nav_order: 1
 # What is MocapForAll?
 
 ## Motion capture software for everyone
-<img src="{{ site.url }}{{ site.baseurl }}/App-Demo.gif" alt="App-Demo" style="zoom:80%;" />
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/App-Demo.gif" alt="App-Demo" style="zoom:80%;" />
 
 ### No special equipment required
 
@@ -64,7 +64,7 @@ An option for projects with limited budgets, such as indie games, indie films, o
 
 By using these, you can do the followings, as well as  you can even create your own programs to receive data since the output specifications are open to public.
 
-<img src="{{ site.url }}{{ site.baseurl }}/App-Overview.png" alt="App-Overview" style="zoom: 80%;" /> 
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/App-Overview.png" alt="App-Overview" style="zoom: 80%;" /> 
 
 ### Use in SteamVR via Virtual Motion Tracker
 Through [Virtual Motion Tracker](https://gpsnmeajp.github.io/VirtualMotionTrackerDocument/), the capture motion can be used as virtual trackers in applications running on SteamVR.
@@ -168,9 +168,9 @@ From now on, we will only explain the case of **other than RTX30\*\* series**. I
 
 1. Install [CUDA 11.0.3](https://developer.nvidia.com/cuda-11.0-update1-download-archive?target_os=Windows&target_arch=x86_64&target_version=10&target_type=exenetwork)   
     Please note that the installer may fail to install the NVIDIA driver. In that case, please install the latest NVIDIA driver manually.    
-    <img src="{{ site.url }}{{ site.baseurl }}/Install-TensorRT-CUDA.png" alt="CUDA" style="zoom:80%;" />  
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/Install-TensorRT-CUDA.png" alt="CUDA" style="zoom:80%;" />  
 2. Download and unzip [cuDNN v8.0.2 (July 24th, 2020), for CUDA 11.0](https://developer.nvidia.com/rdp/cudnn-archive)  
-    <img src="{{ site.url }}{{ site.baseurl }}/Install-TensorRT-cuDNN.png" alt="cuDNN" style="zoom:50%;" />  
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/Install-TensorRT-cuDNN.png" alt="cuDNN" style="zoom:50%;" />  
 3. Overwrite the following folders  
     * C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.0\bin
     * C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.0\include
@@ -185,7 +185,7 @@ From now on, we will only explain the case of **other than RTX30\*\* series**. I
 4. Add an environment variable "CUDNN_PATH", and set its value to "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.0".  
 5. Download and unzip [TensorRT7.1.3.4](https://developer.nvidia.com/nvidia-tensorrt-7x-download)
     Note that a Nvidia account is required.  
-    <img src="{{ site.url }}{{ site.baseurl }}/Install-TensorRT.png" alt="TensorRT" style="zoom:50%;" />  
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/Install-TensorRT.png" alt="TensorRT" style="zoom:50%;" />  
 
 6. Add the path of lib folder in that to the environment variable "PATH", for example "C:\Program Files\NVIDIA GPU Computing Toolkit\TensorRT-7.1.3.4\lib"  
 
@@ -196,11 +196,11 @@ From now on, we will only explain the case of **other than RTX30\*\* series**. I
     （(For other options of TensorRT, see [this](https://www.onnxruntime.ai/docs/reference/execution-providers/TensorRT-ExecutionProvider.html#configuration-options)） 　
     （Your environment variables will be something like this）  
 
-  ![Install-TensorRT-EnvironmentVariables](Install-TensorRT-EnvironmentVariables.png)    
-  ![Install-TensorRT-EnvironmentVariables2](Install-TensorRT-EnvironmentVariables2.png)  
+  ![Install-TensorRT-EnvironmentVariables]({{ site.url }}{{ site.baseurl }}/assets/images/Install-TensorRT-EnvironmentVariables.png)    
+  ![Install-TensorRT-EnvironmentVariables2]({{ site.url }}{{ site.baseurl }}/assets/images/Install-TensorRT-EnvironmentVariables2.png)  
 
 ​    （Your environment variable "Path" will be something like this）  
-  ![Install-TensorRT-EnvironmentVariables-Path](Install-TensorRT-EnvironmentVariables-Path.png)  
+  ![Install-TensorRT-EnvironmentVariables-Path]({{ site.url }}{{ site.baseurl }}/assets/images/Install-TensorRT-EnvironmentVariables-Path.png)  
 
 </details>
 
@@ -273,7 +273,7 @@ It is recommended to place the camera at 45 degree left and right from the front
 If the capture target and the two cameras are positioned in a straight line, the accuracy tend to be poor because the depth information is insufficient.  
 This is an example of our camera placement:  
 
-  <img src="{{ site.url }}{{ site.baseurl }}/Camera-Placing.png" alt="カメラの設置位置" style="zoom: 50%;" />  
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/Camera-Placing.png" alt="カメラの設置位置" style="zoom: 50%;" />  
 
 
 
@@ -302,9 +302,9 @@ In camera calibration in MocapForAll, the following 2 types of information are o
 Intrinsic parameters are the focal length *f* of the lens and the position of the optical axis *Cx, Cy*, which describes the **characteristics of the camera itself**.  
 These are unique to the camera (lens) and basically do not change. Therefore, **once you get them correctly, you don't need to get them again.**  
 Mathematically, it is represented by a matrix that describes the relationship between "positions in the camera image" and "positions in the camera coordinate". This is the matrix displayed on the app screen.  
-![Camera-Calibration-Intrinsic-Equation](Camera-Calibration-Intrinsic-Equation.png)  
+![Camera-Calibration-Intrinsic-Equation]({{ site.url }}{{ site.baseurl }}/assets/images/Camera-Calibration-Intrinsic-Equation.png)  
 
-![Camera-Calibration-Intrinsic-Geometry](Camera-Calibration-Intrinsic-Geometry.png)  
+![Camera-Calibration-Intrinsic-Geometry]({{ site.url }}{{ site.baseurl }}/assets/images/Camera-Calibration-Intrinsic-Geometry.png)  
 
 ##### Notes on autofocus
 If you use a camera with autofocus, keep in mind that as the focus changes, the focal length changes, so the intrinsic parameter also changes.  
@@ -315,9 +315,9 @@ Extrinsic parameters are **the position and the orientation of the camera in the
 In theory, once the camera is completely fixed in your room, it can be treated as a fixed value. But in practice, it sometimes shifts little by little over time. So, **it is recommended to obtain it again every time you start using MocapForAll**.   
 Mathematically, it is represented by a matrix that describes the relationship between "positions in the camera coordinate" and "positions in the world coordinate". This is the matrix displayed on the app screen.
 
-![Camera-Calibration-Extrinsic-Equation](Camera-Calibration-Extrinsic-Equation.png)  
+![Camera-Calibration-Extrinsic-Equation]({{ site.url }}{{ site.baseurl }}/assets/images/Camera-Calibration-Extrinsic-Equation.png)  
 
-![Camera-Calibration-Extrinsic-Geometry](Camera-Calibration-Extrinsic-Geometry.png)  
+![Camera-Calibration-Extrinsic-Geometry]({{ site.url }}{{ site.baseurl }}/assets/images/Camera-Calibration-Extrinsic-Geometry.png)  
 
 ##### 4 methods to get extrinsic parameters
 In MocapForAll, there are 4 methods to get extrinsic parameters. Please note that the preparation and execution procedures are different for each.
@@ -340,7 +340,7 @@ In this section, we will print the "specific images" in preparation for camera c
 We will use [this image](https://raw.githubusercontent.com/Akiya-Research-Institute/MocapForAll-Wiki/main/resources/calibration/IntrinsicCalibration.png).  
 If you haven't fixed the camera in the room yet, you don't need to print it out. We will use the above image by showing on the PC display.  
 If you have already fixed the camera, print the above image in A4 size. The size does not have to be exact. Then tape it to a cardboard box to keep it flat.  
-![Camera-Calibration-Intrinsic-Marker](Camera-Calibration-Intrinsic-Marker.jpg)  
+![Camera-Calibration-Intrinsic-Marker]({{ site.url }}{{ site.baseurl }}/assets/images/Camera-Calibration-Intrinsic-Marker.jpg)  
 
 #### Print the image for extrinsic parameter calibration
 The image differs depending on the [4 methods to get extrinsic parameters](#4-methods-to-get-extrinsic-parameters) explained before.
@@ -350,15 +350,15 @@ Either way, the size does not have to be exact.
 1. Method using ChArUco board  
     We will use [this image](https://raw.githubusercontent.com/Akiya-Research-Institute/MocapForAll-Wiki/main/resources/calibration/ExtrinsicCalibration.png). Print this in **A2 or larger**.  
     You don't have a printer which can print A2? (Me too) Then, it is recommended to divide the image into two pieces, print them on two sheets of A3 paper, and tape them together.  
-    ![Camera-Calibration-Extrinsic-Marker-Charuco](Camera-Calibration-Extrinsic-Marker-Charuco.jpg)  
+    ![Camera-Calibration-Extrinsic-Marker-Charuco]({{ site.url }}{{ site.baseurl }}/assets/images/Camera-Calibration-Extrinsic-Marker-Charuco.jpg)  
     If you tape it on a cardboard like this so that it keeps in a clean flat state, you can continue to use it for a long time.  
     （The one in the photo above has been used for about 3 months, but it is still good to use.)
 2. Method using ArUco cluster  
     We will use "arucoMarker0.png", "(same)1.png" and "(same)2.png" in [this zip](https://github.com/Akiya-Research-Institute/MocapForAll-Wiki/raw/main/resources/calibration/ArucoMarkers.zip). Print them in A4 or A3. A4 is enough for a room that is not very large.   
-    ![Camera-Calibration-Extrinsic-Marker-Aruco](Camera-Calibration-Extrinsic-Marker-Aruco.jpg)  
+    ![Camera-Calibration-Extrinsic-Marker-Aruco]({{ site.url }}{{ site.baseurl }}/assets/images/Camera-Calibration-Extrinsic-Marker-Aruco.jpg)  
 3. Method using Diamond cluster  
     We will use "diamondMarker0.png" and others in [this zip](https://github.com/Akiya-Research-Institute/MocapForAll-Wiki/raw/main/resources/calibration/DiamondMarkers.zip). Print them in A2 or larger in the same way as "1. Method using ChArUco board".  
-    ![Camera-Calibration-Extrinsic-Marker-Diamond](Camera-Calibration-Extrinsic-Marker-Diamond.jpg)
+    ![Camera-Calibration-Extrinsic-Marker-Diamond]({{ site.url }}{{ site.baseurl }}/assets/images/Camera-Calibration-Extrinsic-Marker-Diamond.jpg)
 5. Method using human motion  
     There is nothing to print.
 
@@ -369,16 +369,16 @@ You need to measure the size of the actual printed image for extrinsic parameter
 The part to measure differs depending on the [4 methods to get extrinsic parameters](#4-methods-to-get-extrinsic-parameters) explained before.
 
 1. Method using ChArUco board  
-![Which_side_to_measure_-_ChArUco_board](Which_side_to_measure_-_ChArUco_board_(default).png)   
+![Which_side_to_measure_-_ChArUco_board]({{ site.url }}{{ site.baseurl }}/assets/images/Which_side_to_measure_-_ChArUco_board_(default).png)   
 Put the value in "Settings > Calibration > Maker size (affects to coord. scale) > **ChArUco board** [m]". The unit is meters.  
-![Which_side_to_measure_-_ChArUco_board](Settings-Calibration.png)   
+![Which_side_to_measure_-_ChArUco_board]({{ site.url }}{{ site.baseurl }}/assets/images/Settings-Calibration.png)   
 
 2. Method using ArUco cluster    
-![Which_side_to_measure_-_ArUco_marker](Which_side_to_measure_-_ArUco_marker.png)  
+![Which_side_to_measure_-_ArUco_marker]({{ site.url }}{{ site.baseurl }}/assets/images/Which_side_to_measure_-_ArUco_marker.png)  
 Put the value in "Settings > Calibration > Maker size (affects to coord. scale) > **ArUco marker** [m]". The unit is meters.
 
 3. Method using Diamond cluster  
-![Which_side_to_measure_-_Diamond_marker](Which_side_to_measure_-_Diamond_marker.png)  
+![Which_side_to_measure_-_Diamond_marker]({{ site.url }}{{ site.baseurl }}/assets/images/Which_side_to_measure_-_Diamond_marker.png)  
 Put the value in "Settings > Calibration > Maker size (affects to coord. scale) > **Diamond marker** [m]". The unit is meters.
 
 4. Method using human motion  
@@ -389,7 +389,7 @@ Measure the height of your body. Put the value in "Settings > Calibration > Make
 Connect at least 2 cameras to your PC.  
 Click "Add camera" button at the top of the MocapForAll window.   
 Select the combo box next to "Camera:" to find the connected camera.   
- ![Camera-Add](Camera-Add.gif)
+ ![Camera-Add]({{ site.url }}{{ site.baseurl }}/assets/images/Camera-Add.gif)
 
 You can change the image size of the camera by entering the dimensions and clicking "Apply" if camera supports the specified image size.
 Somtimes it fails to change the image size. In that case, please close camera, wait for a moment, and try again.
@@ -402,7 +402,7 @@ You can rotate the image. At the start of capture, only a person standing uprigh
 #### Select camera control framework
 You can select the framework to control the camera by pressing the "▼" next to "Add camera" at the top of the MocapForAll window.    
 
- ![Camera-Add-Framework](Camera-Add-Framework.png)
+ ![Camera-Add-Framework]({{ site.url }}{{ site.baseurl }}/assets/images/Camera-Add-Framework.png)
 
 - **Direct show:** Microsoft's media framework. You can use the OBS-VirtualCam plugin with this.
 - **UE4 media player:** UE4's media framework. Better performance at high resolution. Some cameras don't work with this.
@@ -418,7 +418,7 @@ In MocapForAll, click "Start" button under "Camera > Calibration > Intrinsic".
 Take images with the camera from various angles for about 10 seconds. If the camera is already fixed, move the image instead of the camera.  
 When calibration is completed, intrinsic parameters will be displayed on the app's screen and "Intrinsic  ☑Calibrated" will be shown.  
 
-![Camera-Calibration-Intrinsic-Execution](Camera-Calibration-Intrinsic-Execution.gif)　
+![Camera-Calibration-Intrinsic-Execution]({{ site.url }}{{ site.baseurl }}/assets/images/Camera-Calibration-Intrinsic-Execution.gif)　
 
 Save the camera calibration result from "Save".
 
@@ -435,7 +435,7 @@ The procedure differs depending on the [4 methods to get extrinsic parameters](#
   
     If it does not read the AR marker properly, try [If the marker cannot be read properly](#If-the-marker-cannot-be-read-properly).
 
-    ![Camera-Calibration-Extrinsic-Execution-Charuco](Camera-Calibration-Extrinsic-Execution-Charuco.gif)
+    ![Camera-Calibration-Extrinsic-Execution-Charuco]({{ site.url }}{{ site.baseurl }}/assets/images/Camera-Calibration-Extrinsic-Execution-Charuco.gif)
     
     
     
@@ -451,7 +451,7 @@ The procedure differs depending on the [4 methods to get extrinsic parameters](#
     
     If it does not read the AR marker properly, try [If the marker cannot be read properly](#If-the-marker-cannot-be-read-properly).
     
-    ![Camera-Calibration-Extrinsic-Execution-Aruco](Camera-Calibration-Extrinsic-Execution-Aruco.gif)
+    ![Camera-Calibration-Extrinsic-Execution-Aruco]({{ site.url }}{{ site.baseurl }}/assets/images/Camera-Calibration-Extrinsic-Execution-Aruco.gif)
     
     
     
@@ -468,7 +468,7 @@ The procedure differs depending on the [4 methods to get extrinsic parameters](#
 
     Click "**Start**" under "Camera > Calibration > Extrinsic".  When calibration is completed, extrinsic parameters and the camera position will be displayed, and it will shows "Extrinsic  ☑Calibrated".  
 
-    ![Camera-Calibration-Extrinsic-Execution-Diamond](Camera-Calibration-Extrinsic-Execution-Diamond.gif)
+    ![Camera-Calibration-Extrinsic-Execution-Diamond]({{ site.url }}{{ site.baseurl }}/assets/images/Camera-Calibration-Extrinsic-Execution-Diamond.gif)
 
 
 
@@ -484,7 +484,7 @@ The procedure differs depending on the [4 methods to get extrinsic parameters](#
     
     After all cameras' extrinsic parameters calibrated, click the "**Find Ground**" button at the top of the window and walk around in the same way as [If the marker cannot be read properly](#If-the-marker-cannot-be-read-properly) described below. This will determine the absolute position of the cameras.  
     
-    ![Camera-Calibration-Extrinsic-Execution-Human](Camera-Calibration-Extrinsic-Execution-Human.gif)
+    ![Camera-Calibration-Extrinsic-Execution-Human]({{ site.url }}{{ site.baseurl }}/assets/images/Camera-Calibration-Extrinsic-Execution-Human.gif)
     
 
 #### If the marker cannot be read properly
@@ -499,7 +499,7 @@ Procedure:
   Select "**Speed**" in "Settings > General > Capture body" if your PC's performance is enough for it. (If you have already installed the "Precision" mode in the Appendix, you can also use it.）  
 - Click the "**Find Ground**" button at the top of the window and walk around where at least 2 cameras can see your whole body. After a while, the position of the floor level will be adjusted automatically.  
 
-![Camera-Calibration-Extrinsic-Execution-FindGround](Camera-Calibration-Extrinsic-Execution-FindGround.gif)
+![Camera-Calibration-Extrinsic-Execution-FindGround]({{ site.url }}{{ site.baseurl }}/assets/images/Camera-Calibration-Extrinsic-Execution-FindGround.gif)
 
 #### Confirm the calibration results
 
@@ -514,7 +514,7 @@ After calibration is completed, save the calibration result of each camera by cl
 Also, you can save and load the whole camera setup by clicking "**Save All Cameras**" and "**Load All Cameras**" buttons.  
 Note that the camera selection is saved as an index inside the combo box. If you remove the cameras from your PC, the order of the cameras in the combo box will change and you will not be able to load the cameras properly.
 
-![Camera-Calibration-Save](Camera-Calibration-Save.gif)
+![Camera-Calibration-Save]({{ site.url }}{{ site.baseurl }}/assets/images/Camera-Calibration-Save.gif)
 
 
 
@@ -527,11 +527,11 @@ In addition to the procedure described up to the previous section, you need to a
 As a prerequisite for subsequent operations, use the WASD key and mouse drag to move the viewport on MocapForAll.  
 Screen maximization can be turned on and off with F11 key.  
 
-<img src="{{ site.url }}{{ site.baseurl }}/App-wasd.png" alt="App-wasd" style="zoom:50%;" />　
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/App-wasd.png" alt="App-wasd" style="zoom:50%;" />　
 
 ### Adjust the scales
 
-![Settings-Coordinates-Scales](Settings-Coordinates-Scales.png) 
+![Settings-Coordinates-Scales]({{ site.url }}{{ site.baseurl }}/assets/images/Settings-Coordinates-Scales.png) 
 
 Click "Start capture" at the top of the window and let the cameras to see your whole body to capture your motion.
 By observing the captured result, adjust the scales as shown below to animate the character correctly.   
@@ -556,7 +556,7 @@ Affects to chest, neck, head, shoulders, elbows, hands, fingers.
 
 ### Adjust animation post process
 
-![Settings-AnimationPostProcess](Settings-AnimationPostProcess.png) 
+![Settings-AnimationPostProcess]({{ site.url }}{{ site.baseurl }}/assets/images/Settings-AnimationPostProcess.png) 
 
 The captured motion will be displayed on the screen after the following post processes.  
 
@@ -602,7 +602,7 @@ You can adjust the following 3 parameters:
 
 Setup to reduce the CPU / GPU usage according to the environment and usage.
 
-![Settings-General+Performance](Settings-General+Performance.png)  
+![Settings-General+Performance]({{ site.url }}{{ site.baseurl }}/assets/images/Settings-General+Performance.png)  
 
 #### Check the frame rate
 
@@ -662,7 +662,7 @@ Please note that Virtual Motion Tracker is a separated program from MocapForAll.
 
 ### MocapForAll's settings to send to VMT
 
-![Settings-DataExport-VMT-SteamVR](Settings-DataExport-VMT-SteamVR.png)  
+![Settings-DataExport-VMT-SteamVR]({{ site.url }}{{ site.baseurl }}/assets/images/Settings-DataExport-VMT-SteamVR.png)  
 
 - Set "Settings > Data export > Destination IP address for VMT and VMC" as follows:
   - If the destination is the same PC: "127.0.0.1"
@@ -729,7 +729,7 @@ As described in [Install Virtual Motion Tracker](#Install-Virtual-Motion-Tracker
 - In MocapForAll, click "Align coord. To VR" at the top of the window.
 - Walk around. After a while, the value of "Settings > Coordinates" will be updated automatically, and the coordinates of SteamVR and MocapForAll will be aligned.
 
-![Settings-DataExport-VMT-SteamVR-Align](Settings-DataExport-VMT-SteamVR-Align.gif)　　
+![Settings-DataExport-VMT-SteamVR-Align]({{ site.url }}{{ site.baseurl }}/assets/images/Settings-DataExport-VMT-SteamVR-Align.gif)　　
 
 
 
@@ -739,11 +739,11 @@ As described in [Install Virtual Motion Tracker](#Install-Virtual-Motion-Tracker
 - Load the same VRM model with the other app linking via VMC protocol.  
   To load the VRM model, drag and drop the VRM file into the MocapForAll window when the capture stopped. 
 
-<img src="{{ site.url }}{{ site.baseurl }}/Settings-General-Character-VRM.gif" alt="Settings-General-Character-VRM" style="zoom:50%;" />　　
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/Settings-General-Character-VRM.gif" alt="Settings-General-Character-VRM" style="zoom:50%;" />　　
 
 ### Send motion data
 
-![Settings-DataExport-VMC](Settings-DataExport-VMC.png)　　
+![Settings-DataExport-VMC]({{ site.url }}{{ site.baseurl }}/assets/images/Settings-DataExport-VMC.png)　　
 
 - Set "Settings > Data export > Destination IP address for VMT and VMC" as follows:
   - If the destination is the same PC: "127.0.0.1"
@@ -780,7 +780,7 @@ A dummy VRM model runs in background.
 
 ### How to save as BVH files
 
-![Settings-DataExport-BVH](Settings-DataExport-BVH.gif)
+![Settings-DataExport-BVH]({{ site.url }}{{ site.baseurl }}/assets/images/Settings-DataExport-BVH.gif)
 
 - Turn on "Settings > Data export > Record to BVH file"
   - "Settings  > General > Character" will be automatically set to "VRM runtime load"
@@ -842,23 +842,23 @@ You can export bone transform and facial expression raw data to shared memory.
 
 #### Body
 
-![DataFormat-SharedMemory-Body](DataFormat-SharedMemory-Body.png)
+![DataFormat-SharedMemory-Body]({{ site.url }}{{ site.baseurl }}/assets/images/DataFormat-SharedMemory-Body.png)
 
 #### Hand
 
 The orientation and position of 15 bones are exported in the similar format as the Body data. The arrangement of bones is as follows.
 
-<img src="{{ site.url }}{{ site.baseurl }}/DataFormat-SharedMemory-Hand.png" alt="DataFormat-SharedMemory-Hand" style="zoom: 33%;" /> 
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/DataFormat-SharedMemory-Hand.png" alt="DataFormat-SharedMemory-Hand" style="zoom: 33%;" /> 
 
 #### Face
 
 Only positions (no rotations) are exported for 468 face landmarks. The position is represented by a three-dimensional value with the XY coordinates in pixels in the camera image cropped to the area of the face and the Z coordinate of the same scale in the depth direction.
 
-<img src="{{ site.url }}{{ site.baseurl }}/DataFormat-SharedMemory-Face1.png" alt="DataFormat-SharedMemory-Face1" style="zoom: 65%;" /> 
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/DataFormat-SharedMemory-Face1.png" alt="DataFormat-SharedMemory-Face1" style="zoom: 65%;" /> 
 
 Enlarge the image below to see where each landmark corresponds to your face.
 
-<img src="{{ site.url }}{{ site.baseurl }}/DataFormat-SharedMemory-Face.jpg" alt="DataFormat-SharedMemory-Face" style="zoom: 10%;" /> 
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/DataFormat-SharedMemory-Face.jpg" alt="DataFormat-SharedMemory-Face" style="zoom: 10%;" /> 
 
 #### Eye
 
@@ -954,7 +954,7 @@ From v1.13, you can execute a specific operation at startup by specifying the fo
 
 Example:
 
-![App-Commandline-Args](App-Commandline-Args.png)  
+![App-Commandline-Args]({{ site.url }}{{ site.baseurl }}/assets/images/App-Commandline-Args.png)  
 
 
 ## Apply motion only to the upper body
