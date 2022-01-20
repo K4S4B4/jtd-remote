@@ -19,6 +19,10 @@ description: Official documentation of MocapForAll. Explains how to setup and us
 # url: "https://k4s4b4.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 remote_theme: pmarsceill/just-the-docs
 
+plugins:
+  # - jekyll-toc
+  - jekyll-redirect-from
+
 permalink: pretty
 exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json",  "script/", "LICENSE.txt", "lib/", "bin/", "Rakefile"
 , "docs/tests/"
