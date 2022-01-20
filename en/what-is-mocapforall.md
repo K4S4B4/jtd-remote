@@ -7,7 +7,7 @@ nav_order: 1
 # What is MocapForAll?
 
 ## Motion capture software for everyone
-<img src="{{ site.url }}{{ site.baseurl }}/asset/images/App-Demo.gif" alt="App-Demo" style="zoom:80%;" />
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/App-Demo.gif" alt="App-Demo" style="zoom:80%;" />
 
 ### No special equipment required
 
@@ -25,7 +25,7 @@ For examples, it runs at
 - around 17 fps on Surface Pro 7 which does not have a dedicated GPU
 - 30 to 60 fps on GTX 1080 Ti
 
-### Cheap (JPY9999)
+### Cheap
 An option for projects with limited budgets, such as indie games, indie films, or education.
 ## What you can do with MocapForAll
 - You can output captured motion to the network via VMT protocol(\*1) and [VMC protocol](https://protocol.vmc.info/) in real time(\*2). 
@@ -39,7 +39,7 @@ An option for projects with limited budgets, such as indie games, indie films, o
 
 By using these, you can do the followings, as well as  you can even create your own programs to receive data since the output specifications are open to public.
 
-<img src="App-Overview.png" alt="App-Overview" style="zoom: 80%;" /> 
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/App-Overview.png" alt="App-Overview" style="zoom: 80%;" /> 
 
 ### Use in SteamVR via Virtual Motion Tracker
 Through [Virtual Motion Tracker](https://gpsnmeajp.github.io/VirtualMotionTrackerDocument/), the capture motion can be used as virtual trackers in applications running on SteamVR.
