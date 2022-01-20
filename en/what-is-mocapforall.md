@@ -44,9 +44,9 @@ By using these, you can do the followings, as well as  you can even create your 
 ### Use in SteamVR via Virtual Motion Tracker
 Through [Virtual Motion Tracker](https://gpsnmeajp.github.io/VirtualMotionTrackerDocument/), the capture motion can be used as virtual trackers in applications running on SteamVR.
 
-### Use in UnrealEngine4, UnrealEngine5, Unity
+### Use in Unreal Engine4, Unreal Engine5, Unity
 
-You can send the captured motion to UnrealEngine4, UnrealEngine5, or Unity for game development or video production.  
+You can send the captured motion to Unreal Engine4, Unreal Engine5, or Unity for game development or video production.  
 
 - Plugins for linking data directly to UE4, UE5, or Unity are available [here](https://booth.pm/ja/items/3026430).  
 - As described in [Use in other apps via VMC protocol](#Use-in-other-apps-via-VMC-protocol), it is also possible to link by EVMC4U and VMC4UE using VMC Protocol.
