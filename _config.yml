@@ -17,6 +17,7 @@ title: MocapForAll Manual
 description: Official documentation of MocapForAll. Explains how to setup and use with VR, game engines, and DCC tools. MocapForAll is a Windows app to capture human motion with multiple webcams.
 # baseurl: "/jtd-remote" # the subpath of your site, e.g. /blog
 # url: "https://k4s4b4.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+remote_theme: pmarsceill/just-the-docs
 
 permalink: pretty
 exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json",  "script/", "LICENSE.txt", "lib/", "bin/", "Rakefile"
