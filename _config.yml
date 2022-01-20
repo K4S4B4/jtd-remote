@@ -50,7 +50,7 @@ remote_theme: pmarsceill/just-the-docs
 #   - vendor/gems/
 #   - vendor/ruby/
 
-logo: "/assets/images/SimpleLogo.png"
+# logo: "/assets/images/SimpleLogo.png"
 
 
 # Enable or disable the site search
