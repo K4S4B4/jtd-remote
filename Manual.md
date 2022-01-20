@@ -1,3 +1,9 @@
+---
+title: Manual
+parent: English
+nav_order: 1
+---
+
 (Quick start guide which covers ["How to install"](#How-to-install-MocapForAll) section and ["How to use 1: Preparations"](#How-to-use-1-Preparations-to-capture-motion) section.)  
 
 [![Quick start guide at youtube](http://img.youtube.com/vi/SP72wWWFcHU/0.jpg)](http://www.youtube.com/watch?v=SP72wWWFcHU)
