@@ -7,7 +7,7 @@ nav_order: 1
 # What is MocapForAll?
 
 ## Motion capture software for everyone
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/App-Demo.gif" alt="App-Demo" style="zoom:80%;" />
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/App-Demo.gif" alt="App-Demo" width="640" height="360" />
 
 <iframe width="400" height="315" class="table-wrapper py px" src="{{ site.url }}{{ site.baseurl }}/assets/images/App-Demo.gif" title="Gif video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
