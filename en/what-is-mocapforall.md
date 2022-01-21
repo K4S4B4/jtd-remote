@@ -51,7 +51,7 @@ Through [Virtual Motion Tracker](https://gpsnmeajp.github.io/VirtualMotionTracke
 You can send the captured motion to Unreal Engine4, Unreal Engine5, or Unity for game development or video production.  
 
 - Plugins for linking data directly to UE4, UE5, or Unity are available [here](https://booth.pm/ja/items/3026430).  
-- As described in [Use in other apps via VMC protocol](#Use-in-other-apps-via-VMC-protocol), it is also possible to link by EVMC4U and VMC4UE using VMC Protocol.
+- As described in [Use in other apps via VMC protocol](#use-in-other-apps-via-vmc-protocol), it is also possible to link by EVMC4U and VMC4UE using VMC Protocol.
 - A Unity sample to read data from the shared memory written by MocapForAll is available [here](https://github.com/Akiya-Research-Institute/MocapForAll-SharedMemory-Plugin-for-Unity).
 
 ### Use in other apps via VMC protocol

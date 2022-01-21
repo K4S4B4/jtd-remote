@@ -4,27 +4,27 @@ parent: English
 nav_order: 1
 ---
 
-(Quick start guide which covers ["How to install"](#How-to-install-MocapForAll) section and ["How to use 1: Preparations"](#How-to-use-1-Preparations-to-capture-motion) section.)  
+(Quick start guide which covers ["How to install"](#how-to-install-mocapforall) section and ["How to use 1: Preparations"](#how-to-use-1-preparations-to-capture-motion) section.)  
 
 [![Quick start guide at youtube](http://img.youtube.com/vi/SP72wWWFcHU/0.jpg)](http://www.youtube.com/watch?v=SP72wWWFcHU)
 
 # Table of contents
 
-- [What is MocapForAll?](#What-is-MocapForAll)
-- [How to install MocapForAll](#How-to-install-MocapForAll)
-- [How to use 1: Preparations to capture motion](#How-to-use-1-Preparations-to-capture-motion)
-  - [Get cameras](#Get-cameras)
-  - [Calibrate cameras](#Calibrate-cameras)
-  - [Settings on the app](#Settings-on-the-app)
-- [How to use 2: Export captured motion](#How-to-use-2-Export-captured-motion)
-  - [Use in SteamVR via VMT](#Use-in-SteamVR-via-VMT)
-  - [Use in other apps via VMC protocol](#Use-in-other-apps-via-VMC-protocol-1)
-  - [Save as BVH files](#Save-as-BVH-files)
-  - [Use in UE4, UE5, Unity](#Use-in-UE4-UE5-Unity)
-  - [Export to shared memory](#Export-to-shared-memory)
-- [How to use 3: Other settings](#How-to-use-3-Other-settings)
-- [FAQ](#FAQ)
-- [Known issues](#Known-issues)
+- [What is MocapForAll?](#what-is-mocapforall)
+- [How to install MocapForAll](#how-to-install-mocapforall)
+- [How to use 1: Preparations to capture motion](#how-to-use-1-preparations-to-capture-motion)
+  - [Get cameras](#get-cameras)
+  - [Calibrate cameras](#calibrate-cameras)
+  - [Settings on the app](#settings-on-the-app)
+- [How to use 2: Export captured motion](#how-to-use-2-export-captured-motion)
+  - [Use in SteamVR via VMT](#use-in-steamvr-via-vmt)
+  - [Use in other apps via VMC protocol](#use-in-other-apps-via-vmc-protocol-1)
+  - [Save as BVH files](#save-as-bvh-files)
+  - [Use in UE4, UE5, Unity](#use-in-ue4-ue5-unity)
+  - [Export to shared memory](#export-to-shared-memory)
+- [How to use 3: Other settings](#how-to-use-3-other-settings)
+- [FAQ](#faq)
+- [Known issues](#known-issues)
 - [Acknowledgements](Acknowledgements)
 
  
@@ -74,7 +74,7 @@ Through [Virtual Motion Tracker](https://gpsnmeajp.github.io/VirtualMotionTracke
 You can send the captured motion to Unreal Engine4, Unreal Engine5, or Unity for game development or video production.  
 
 - Plugins for linking data directly to UE4, UE5, or Unity are available [here](https://booth.pm/ja/items/3026430).  
-- As described in [Use in other apps via VMC protocol](#Use-in-other-apps-via-VMC-protocol), it is also possible to link by EVMC4U and VMC4UE using VMC Protocol.
+- As described in [Use in other apps via VMC protocol](#use-in-other-apps-via-vmc-protocol), it is also possible to link by EVMC4U and VMC4UE using VMC Protocol.
 - A Unity sample to read data from the shared memory written by MocapForAll is available [here](https://github.com/Akiya-Research-Institute/MocapForAll-SharedMemory-Plugin-for-Unity).
 
 ### Use in other apps via VMC protocol
@@ -115,7 +115,7 @@ Before purchase, please read and accept the terms and conditions from the follow
 https://store.steampowered.com//eula/1759710_eula_0
 
 ## How to install from BOOTH
-You can install MocapForAll [manually](#Manual-installation) or by using [network installer](#Installation-by-Network-Installer) from BOOTH.  
+You can install MocapForAll [manually](#manual-installation) or by using [network installer](#installation-by-network-installer) from BOOTH.  
 
 ### Manual installation
 
@@ -209,9 +209,9 @@ From now on, we will only explain the case of **other than RTX30\*\* series**. I
 
 2. Execute "Network_Installer_-_MocapForAll_Full_vN.N.N.exe".
 
-3. Select the required Appendix. See [Appendix](#Appendix-optional) for the contents.
+3. Select the required Appendix. See [Appendix](#appendix-optional) for the contents.
 
-   To use "Appendix4_TensorRT_mode", see [Installation of TensorRT](#Installation-of-TensorRT) and install the required software.
+   To use "Appendix4_TensorRT_mode", see [Installation of TensorRT](#installation-of-tensorrt) and install the required software.
 
 4. Run MocapForAll from the Start menu or MocapForAll.exe in the installation path.
 
@@ -406,13 +406,13 @@ You can select the framework to control the camera by pressing the "▼" next to
 
 - **Direct show:** Microsoft's media framework. You can use the OBS-VirtualCam plugin with this.
 - **UE4 media player:** UE4's media framework. Better performance at high resolution. Some cameras don't work with this.
-- **Recorded video**: Use recorded video instead of camera. See [ Motion capture from recorded videos](#Motion-capture-from-recorded-videos).
+- **Recorded video**: Use recorded video instead of camera. See [ Motion capture from recorded videos](#motion-capture-from-recorded-videos).
 
 If the camera works with UE4 media player, it is recommended to use it. If it doesn't work, use Direct Show.
 
 
 ### Calibrate intrinsic parameters
-If you have not printed the image in [Print the image for intrinsic parameter calibration](#Print-the-image-for-intrinsic-parameter-calibration) section, display [this image](https://raw.githubusercontent.com/Akiya-Research-Institute/MocapForAll-Wiki/main/resources/calibration/IntrinsicCalibration.png) on your PC's screen as large as possible.
+If you have not printed the image in [Print the image for intrinsic parameter calibration](#print-the-image-for-intrinsic-parameter-calibration) section, display [this image](https://raw.githubusercontent.com/Akiya-Research-Institute/MocapForAll-Wiki/main/resources/calibration/IntrinsicCalibration.png) on your PC's screen as large as possible.
 
 In MocapForAll, click "Start" button under "Camera > Calibration > Intrinsic".   
 Take images with the camera from various angles for about 10 seconds. If the camera is already fixed, move the image instead of the camera.  
@@ -427,13 +427,13 @@ Save the camera calibration result from "Save".
 The procedure differs depending on the [4 methods to get extrinsic parameters](#4-methods-to-get-extrinsic-parameters) explained before.
 
 1. Method using ChArUco board  
-    Place the image printed in [Print the image for extrinsic parameter calibration](#Print-the-image-for-extrinsic-parameter-calibration) section on the floor. This will be the origin of the captured motion.  
+    Place the image printed in [Print the image for extrinsic parameter calibration](#print-the-image-for-extrinsic-parameter-calibration) section on the floor. This will be the origin of the captured motion.  
     Place the cameras where they can see the placed image.  
   
     In MocapForAll, select "**ChArUco board (default)**" in "Settings > Calibration > Extrinsic calibration method".  
     Click "Start" button under "Camera > Calibration > Extrinsic".  When calibration is completed, extrinsic parameters and the camera position will be displayed, and it will shows "Extrinsic  ☑Calibrated".  
   
-    If it does not read the AR marker properly, try [If the marker cannot be read properly](#If-the-marker-cannot-be-read-properly).
+    If it does not read the AR marker properly, try [If the marker cannot be read properly](#if-the-marker-cannot-be-read-properly).
 
     ![Camera-Calibration-Extrinsic-Execution-Charuco]({{ site.url }}{{ site.baseurl }}/assets/images/Camera-Calibration-Extrinsic-Execution-Charuco.gif)
     
@@ -441,7 +441,7 @@ The procedure differs depending on the [4 methods to get extrinsic parameters](#
     
 2. Method using ArUco cluster   
    
-    Place the images printed in [Print the image for extrinsic parameter calibration](#Print-the-image-for-extrinsic-parameter-calibration) section on the floor. "arucoMarker0.png" will be the origin of the captured motion.  
+    Place the images printed in [Print the image for extrinsic parameter calibration](#print-the-image-for-extrinsic-parameter-calibration) section on the floor. "arucoMarker0.png" will be the origin of the captured motion.  
     Place the cameras where they can see the placed images.  
     
     In MocapForAll, select "**ArUco cluster**" in "Settings > Calibration > Extrinsic calibration method".  
@@ -449,7 +449,7 @@ The procedure differs depending on the [4 methods to get extrinsic parameters](#
     
     After all markers appeared, click "**Stop scanning**" and then "**Start**" under "Camera > Calibration > Extrinsic".  When calibration is completed, extrinsic parameters and the camera position will be displayed, and it will shows "Extrinsic  ☑Calibrated".  
     
-    If it does not read the AR marker properly, try [If the marker cannot be read properly](#If-the-marker-cannot-be-read-properly).
+    If it does not read the AR marker properly, try [If the marker cannot be read properly](#if-the-marker-cannot-be-read-properly).
     
     ![Camera-Calibration-Extrinsic-Execution-Aruco]({{ site.url }}{{ site.baseurl }}/assets/images/Camera-Calibration-Extrinsic-Execution-Aruco.gif)
     
@@ -457,7 +457,7 @@ The procedure differs depending on the [4 methods to get extrinsic parameters](#
     
 3. Method using Diamond cluster 
 
-    Place the images printed in [Print the image for extrinsic parameter calibration](#Print-the-image-for-extrinsic-parameter-calibration) section at a distance that fits in a frame of the camera. It does not have to be in the same plane. "diamondMarker0.png" will be the origin of the captured motion, so place this on the floor.  
+    Place the images printed in [Print the image for extrinsic parameter calibration](#print-the-image-for-extrinsic-parameter-calibration) section at a distance that fits in a frame of the camera. It does not have to be in the same plane. "diamondMarker0.png" will be the origin of the captured motion, so place this on the floor.  
 
     In MocapForAll, select "**Diamond cluster**" in "Settings > Calibration > Extrinsic calibration method".  
     Click "**Scan markers**" button under "Camera > Calibration > Extrinsic" in one of the cameras. Take pictures of "diamondMarker0.png" and one of the markers at the same time. After a while, the position of another marker will be fixed with "diamondMarker0.png" as the origin, and the marker will be displayed on the 3D viewport. 
@@ -482,7 +482,7 @@ The procedure differs depending on the [4 methods to get extrinsic parameters](#
     Click **"Start calibration" button at the top of the window**, and walk around on the floor where the cameras can see your whole body.  
     Your motion will be captured and the positions of your joints will be used to find the cameras relative positions.
     
-    After all cameras' extrinsic parameters calibrated, click the "**Find Ground**" button at the top of the window and walk around in the same way as [If the marker cannot be read properly](#If-the-marker-cannot-be-read-properly) described below. This will determine the absolute position of the cameras.  
+    After all cameras' extrinsic parameters calibrated, click the "**Find Ground**" button at the top of the window and walk around in the same way as [If the marker cannot be read properly](#if-the-marker-cannot-be-read-properly) described below. This will determine the absolute position of the cameras.  
     
     ![Camera-Calibration-Extrinsic-Execution-Human]({{ site.url }}{{ site.baseurl }}/assets/images/Camera-Calibration-Extrinsic-Execution-Human.gif)
     
@@ -503,7 +503,7 @@ Procedure:
 
 #### Confirm the calibration results
 
-If you have input the correct value in [Preparation for camera calibration 2: Measure the marker size](#Preparation-for-camera-calibration-2-Measure-the-marker-size), you can see the position of the camera in the 3D viewport. For how to move the viewpoint, refer to [Move viewport](#Move-viewport).
+If you have input the correct value in [Preparation for camera calibration 2: Measure the marker size](#preparation-for-camera-calibration-2-measure-the-marker-size), you can see the position of the camera in the 3D viewport. For how to move the viewpoint, refer to [Move viewport](#move-viewport).
 
 Note that the camera may appear below the floor (in this case, the calibration has failed).
 
@@ -536,7 +536,7 @@ Screen maximization can be turned on and off with F11 key.
 Click "Start capture" at the top of the window and let the cameras to see your whole body to capture your motion.
 By observing the captured result, adjust the scales as shown below to animate the character correctly.   
 
-If you are using Virtual Motion Tracker and SteamVR, the scales will be adjusted in [Align coordinates of SteamVR and MocapForAll](#Align-coordinates-of-SteamVR-and-MocapForAll) section described later, so you can skip this section.
+If you are using Virtual Motion Tracker and SteamVR, the scales will be adjusted in [Align coordinates of SteamVR and MocapForAll](#align-coordinates-of-steamvr-and-mocapforall) section described later, so you can skip this section.
 
 The reason why the scale is divided between the upper body and the lower body is that the two-dimensional characters generally have longer legs than the real humans. (Therefore, the ratio of the upper body scale to the lower body scale depends on the character you want to apply.)
 
@@ -570,7 +570,7 @@ There is a function to control the positions of the feet so that they do not flo
 Note that data sent when "Settings > Data export > VMT protocol > Send tracking points" turned on is one **before** applying the above adjustment. (In other words, **if you use with VMT and SteamVR, you do not need to care about this setting.**)
 
 The threshold of the distance between the foot and the ground to determine whether to apply this adjustment is automatically calculated using the value "Settings > Coordinates > Scale > Lower body".  
-If [Preparation for camera calibration 2: Measure the marker size](#Preparation-for-camera-calibration-2-Measure-the-marker-size) was not done properly and the scale of "Lower body" was too big, the character's feet may not be able to get off the ground at all. In that case, redo [Preparation for camera calibration 2: Measure the marker size](#Preparation-for-camera-calibration-2-Measure-the-marker-size) and [Calibrate extrinsic parameters](#Calibrate-extrinsic-parameters), or turn off "Force feet grounded".  
+If [Preparation for camera calibration 2: Measure the marker size](#preparation-for-camera-calibration-2-measure-the-marker-size) was not done properly and the scale of "Lower body" was too big, the character's feet may not be able to get off the ground at all. In that case, redo [Preparation for camera calibration 2: Measure the marker size](#preparation-for-camera-calibration-2-measure-the-marker-size) and [Calibrate extrinsic parameters](#calibrate-extrinsic-parameters), or turn off "Force feet grounded".  
 
 #### Adjust the smoothing
 
@@ -621,7 +621,7 @@ When using a GPU, you have two options. TensorRT is difficult to install, takes 
   - AMD GCN 1st Gen (Radeon HD 7000 series) and above
 - GPU_TensorRT
   TensorRT provides GPU acceleration on supported NVIDIA GPUs.
-  To use this, you need to install CUDA, cuDNN, TensorRT, and "Appendix4_TensorRT_mode". See [Installation of TensorRT](#Installation-of-TensorRT).
+  To use this, you need to install CUDA, cuDNN, TensorRT, and "Appendix4_TensorRT_mode". See [Installation of TensorRT](#installation-of-tensorrt).
 
 #### Speed mode
 
@@ -629,7 +629,7 @@ From "Settings > General > Capture body", you can choose what to prioritize.
 
 - In many cases, "**Speed**" is recommended.
 - "Speed+" is recommended when using a PC with low performance such as a laptop PC or when using it together with a very heavy VR application.  
-- Use "Precision" mode when you want to capture motion precisely such as for movie production. You need to install "[Appendix1_Precision_mode](#Appendix-Optional)".
+- Use "Precision" mode when you want to capture motion precisely such as for movie production. You need to install "[Appendix1_Precision_mode](#appendix-optional)".
 
 #### Reduce drawing
 
@@ -657,7 +657,7 @@ Please note that Virtual Motion Tracker is a separated program from MocapForAll.
 ### Install Virtual Motion Tracker
 
 - Follow the [setup procedure](https://gpsnmeajp.github.io/VirtualMotionTrackerDocument/setup/) of Virtual Motion Tracker.  
-  - If you [align automatically](#Align-automatically) the [coordinates of SteamVR and MocapForAll](#Align-coordinates-of-SteamVR-and-MocapForAll), you need to install modified version of Virtual Motion Tracker for MocapForAll. [Download it from here](https://github.com/KenjiAsaba/VirtualMotionTracker/releases), and set it up in the same way above. Also, you need to use MocapForAll v1.10 or above.
+  - If you [align automatically](#align-automatically) the [coordinates of SteamVR and MocapForAll](#align-coordinates-of-steamvr-and-mocapforall), you need to install modified version of Virtual Motion Tracker for MocapForAll. [Download it from here](https://github.com/KenjiAsaba/VirtualMotionTracker/releases), and set it up in the same way above. Also, you need to use MocapForAll v1.10 or above.
 - Some application requires [settings of controller binding](https://gpsnmeajp.github.io/VirtualMotionTrackerDocument/advanced/#how-to-set-the-controller-bainding).
 
 ### MocapForAll's settings to send to VMT
@@ -682,12 +682,12 @@ For the following settings, please decide on/off by your preference. We recommen
   - When turned **off**, the actual tracking positions will be used as the positions of the virtual trackers.  
     - The delay of the movements of the virtual trackers with respect to the head-mounted display will be **visible as it is**.  
       (For example, when you start walking, it looks like only the head moves first and the rest moves later.)
-    - You **need to adjust the scale and the positions properly** in [Align coordinates of SteamVR and MocapForAll](#Align-coordinates-of-SteamVR-and-MocapForAll) section described below.  
+    - You **need to adjust the scale and the positions properly** in [Align coordinates of SteamVR and MocapForAll](#align-coordinates-of-steamvr-and-mocapforall) section described below.  
       (If the scale is not set properly, the horizontal position of the virtual trackers relative to the HMD shifts as you move in the room.)
   - When turned **off**, the relative positions of your head and the rest parts will be transformed to the relative positions of HMD and the virtual trackers.  
     - The delay of the movements of the virtual trackers with respect to the HMD will be **less noticeable**.  
       (For example, when you start walking, it looks like the rest part slides along with the head.)
-    - You **do not need to input precise number to the scale, and do not need to input the positions** in [Align coordinates of SteamVR and MocapForAll](#Align-coordinates-of-SteamVR-and-MocapForAll) section described below.  
+    - You **do not need to input precise number to the scale, and do not need to input the positions** in [Align coordinates of SteamVR and MocapForAll](#align-coordinates-of-steamvr-and-mocapforall) section described below.  
 
 ### Align coordinates of SteamVR and MocapForAll
 
@@ -720,7 +720,7 @@ The coordinate of the HMD and controller tracked by SteamVR and the coordinate o
 
 #### Align automatically
 
-As described in [Install Virtual Motion Tracker](#Install-Virtual-Motion-Tracker) section, you need to install [the modified version of Virtual Motion Tracker for MocapForAll](https://github.com/KenjiAsaba/VirtualMotionTracker/releases). Also, you need to use MocapForAll v1.10 or above.
+As described in [Install Virtual Motion Tracker](#install-virtual-motion-tracker) section, you need to install [the modified version of Virtual Motion Tracker for MocapForAll](https://github.com/KenjiAsaba/VirtualMotionTracker/releases). Also, you need to use MocapForAll v1.10 or above.
 
 - Close application which uses port 39571 including VMT Manager.
 - Turn on "Settings > Data export > VMT protocol > Send tracking points"
@@ -767,7 +767,7 @@ To receive facial expression morph data, set as follows:
   - If the source app is running on the same PC: Off
   - If the source app is running on other device: On
 
-The received facial expression morph data will be sent as it is if [Send motion data](#Send-motion-data) is set.
+The received facial expression morph data will be sent as it is if [Send motion data](#send-motion-data) is set.
 
 ## Save as BVH files
 ### Bone structure is based on VRM
@@ -814,7 +814,7 @@ See the followings for how to use:
 
 ### Link by VMC4UE or EVMC4U
 
-- As described in [Use in other apps via VMC protocol](#Use-in-other-apps-via-VMC-protocol-1) section, set MocapForAll settings.
+- As described in [Use in other apps via VMC protocol](#use-in-other-apps-via-vmc-protocol-1) section, set MocapForAll settings.
 - VMC4UE
   - As described in "UE4 の使い方" of https://github.com/HAL9HARUKU/VMC4UE/wiki, set up UE4 and click "Play" on UE4 editor. (You do not need last  "VirtualMotionCapture の使い方" section.)
 - EVMC4U
@@ -991,11 +991,11 @@ No, you can't use a monochrome camera with this app. Please use an RGB camera.
 - Make sure the camera image is in focus on the AR marker.
 - Make sure the AR marker is large enough in the camera image.
   - Printing a larger size of the AR marker may help
-  - For camera calibration of extrinsic parameters, see [If the marker cannot be read properly](#If-the-marker-cannot-be-read-properly) section.
+  - For camera calibration of extrinsic parameters, see [If the marker cannot be read properly](#if-the-marker-cannot-be-read-properly) section.
 
 ## Camera calibration of extrinsic parameters does not work
 
-See [If the marker cannot be read properly](#If-the-marker-cannot-be-read-properly) section.
+See [If the marker cannot be read properly](#if-the-marker-cannot-be-read-properly) section.
 
 ## It does not capture even after camera calibration
 - At the start of capture, only a person standing upright can be recognized. So, rotate the image appropriately according to the actual orientation of the camera.
@@ -1010,7 +1010,7 @@ Check errors in VMT Manager. Especially, check if [Room Matrix](https://gpsnmeaj
 
 ## The motion of Virtual trackers are wrong
 
-Make sure that the [alignment of coordinates between SteamVR and MocapForAll](#Align-coordinates-of-SteamVR-and-MocapForAll) is correct.
+Make sure that the [alignment of coordinates between SteamVR and MocapForAll](#align-coordinates-of-steamvr-and-mocapforall) is correct.
 
 ## There is no serial number input field
 Please install the latest MocapForAll. From version 1.0 and above, you do not need to input the HMD serial number.  

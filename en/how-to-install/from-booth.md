@@ -18,9 +18,8 @@ In the free version, there are limitations on data export functions.
 - Maximum frames in a BVH file is limited to 300
 
 ### Paid version
-Before purchase, please read and accept the terms and conditions from the following link.  
+Before purchase, please read and accept the terms and conditions from [this link](https://vrlab.akiya-souken.co.jp/product#buy).  
 If you agree, you can get your purchase password and proceed to the purchase page at BOOTH.  
-https://vrlab.akiya-souken.co.jp/product#buy
 
 You need a pixiv account to purchase at BOOTH.
 
@@ -60,7 +59,7 @@ There are four Appendix as follows:
 
 2. Execute "Network_Installer_-_MocapForAll_Full_vN.N.N.exe".
 
-3. Select the required Appendix. See [Appendix](#Appendix-optional) for the contents.
+3. Select the required Appendix. See [Appendix](#appendix-optional) for the contents.
 
    To use "Appendix4_TensorRT_mode", see [Installation of TensorRT](./install-tensorrt) and install the required software.
 
