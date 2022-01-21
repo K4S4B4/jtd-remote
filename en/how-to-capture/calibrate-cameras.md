@@ -6,9 +6,11 @@ nav_order: 2
 ---
 
 # Calibrate cameras
+{: .no_toc }
 
 ## Contents
 {: .no_toc }
+{:toc}
 
 ## What is camera calibration?
 Camera calibration is the process of obtaining information about the relationship between the positions in the camera image and the positions in the real world. This section describes the concept of what you are doing with camera calibration and some tips for it.
@@ -89,16 +91,16 @@ You need to measure the size of the actual printed image for extrinsic parameter
 The part to measure differs depending on the [4 methods to get extrinsic parameters](#4-methods-to-get-extrinsic-parameters) explained before.
 
 1. Method using ChArUco board  
-![Which_side_to_measure_-_ChArUco_board]({{ site.url }}{{ site.baseurl }}/assets/images/Which_side_to_measure_-_ChArUco_board_(default).png)   
+![ChArUco_board]({{ site.url }}{{ site.baseurl }}/assets/images/Which_side_to_measure_-_ChArUco_board_(default).png)   
 Put the value in "Settings > Calibration > Maker size (affects to coord. scale) > **ChArUco board** [m]". The unit is meters.  
-![Which_side_to_measure_-_ChArUco_board]({{ site.url }}{{ site.baseurl }}/assets/images/Settings-Calibration.png)   
+![ChArUco_board]({{ site.url }}{{ site.baseurl }}/assets/images/Settings-Calibration.png)   
 
 2. Method using ArUco cluster    
-![Which_side_to_measure_-_ArUco_marker]({{ site.url }}{{ site.baseurl }}/assets/images/Which_side_to_measure_-_ArUco_marker.png)  
+![ArUco_marker]({{ site.url }}{{ site.baseurl }}/assets/images/Which_side_to_measure_-_ArUco_marker.png)  
 Put the value in "Settings > Calibration > Maker size (affects to coord. scale) > **ArUco marker** [m]". The unit is meters.
 
 3. Method using Diamond cluster  
-![Which_side_to_measure_-_Diamond_marker]({{ site.url }}{{ site.baseurl }}/assets/images/Which_side_to_measure_-_Diamond_marker.png)  
+![Diamond_marker]({{ site.url }}{{ site.baseurl }}/assets/images/Which_side_to_measure_-_Diamond_marker.png)  
 Put the value in "Settings > Calibration > Maker size (affects to coord. scale) > **Diamond marker** [m]". The unit is meters.
 
 4. Method using human motion  
