@@ -7,9 +7,7 @@ nav_order: 1
 # What is MocapForAll?
 
 ## Motion capture software for everyone
-<iframe width="640" height="360" class="table-wrapper py px" title="YouTube video player" frameborder="0" src="about:blank">
-    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/App-Demo.gif" alt="App-Demo" width="640" height="360" />
-</iframe>
+<iframe width="640" height="360" class="table-wrapper py px" frameborder="0" srcdoc="<img src=&quot;{{ site.url }}{{ site.baseurl }}/assets/images/App-Demo.gif&quot; alt=&quot;App-Demo&quot; width=&quot;640&quot; height=&quot;360&quot; />"></iframe>
 
 
 ### No special equipment required
