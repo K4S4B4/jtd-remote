@@ -9,10 +9,6 @@ nav_order: 1
 ## Motion capture software for everyone
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/App-Demo.gif" alt="App-Demo" width="640" height="360" />
 
-<iframe width="400" height="315" class="table-wrapper py px" src="{{ site.url }}{{ site.baseurl }}/assets/images/App-Demo.gif" title="Gif video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<iframe width="400" height="315" class="table-wrapper py px" src="https://www.youtube.com/embed/SP72wWWFcHU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 ### No special equipment required
 
 You can capture human motion if you have the followings:
@@ -43,7 +39,7 @@ An option for projects with limited budgets, such as indie games, indie films, o
 
 By using these, you can do the followings, as well as  you can even create your own programs to receive data since the output specifications are open to public.
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/App-Overview.png" alt="App-Overview" style="zoom: 80%;" /> 
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/App-Overview.png" alt="App-Overview" width="640" height="360" /> 
 
 ### Use in SteamVR via Virtual Motion Tracker
 Through [Virtual Motion Tracker](https://gpsnmeajp.github.io/VirtualMotionTrackerDocument/), the capture motion can be used as virtual trackers in applications running on SteamVR.

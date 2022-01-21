@@ -37,7 +37,7 @@ It is recommended to place the camera at 45 degree left and right from the front
 If the capture target and the two cameras are positioned in a straight line, the accuracy tend to be poor because the depth information is insufficient.  
 This is an example of our camera placement:  
 
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/Camera-Placing.png" alt="カメラの設置位置" style="zoom: 50%;" />  
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/Camera-Placing.png" alt="カメラの設置位置" width="640" height="360" />  
 
 ## Number of the cameras
 

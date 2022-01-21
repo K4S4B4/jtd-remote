@@ -9,7 +9,9 @@ nav_order: 2
 {: .no_toc }
 
 ## Contents
-{: .no_toc }
+{: .no_toc .text-delta }
+
+1. TOC
 {:toc}
 
 ## What is camera calibration?
@@ -24,6 +26,7 @@ In camera calibration in MocapForAll, the following 2 types of information are o
 Intrinsic parameters are the focal length *f* of the lens and the position of the optical axis *Cx, Cy*, which describes the **characteristics of the camera itself**.  
 These are unique to the camera (lens) and basically do not change. Therefore, **once you get them correctly, you don't need to get them again.**  
 Mathematically, it is represented by a matrix that describes the relationship between "positions in the camera image" and "positions in the camera coordinate". This is the matrix displayed on the app screen.  
+
 ![Camera-Calibration-Intrinsic-Equation]({{ site.url }}{{ site.baseurl }}/assets/images/Camera-Calibration-Intrinsic-Equation.png)  
 
 ![Camera-Calibration-Intrinsic-Geometry]({{ site.url }}{{ site.baseurl }}/assets/images/Camera-Calibration-Intrinsic-Geometry.png)  
@@ -111,8 +114,7 @@ Measure the height of your body. Put the value in "Settings > Calibration > Make
 Connect at least 2 cameras to your PC.  
 Click "Add camera" button at the top of the MocapForAll window.   
 Select the combo box next to "Camera:" to find the connected camera.   
- <!-- ![Camera-Add]() -->
-<iframe width="400" height="315" class="table-wrapper py px" src="{{ site.url }}{{ site.baseurl }}/assets/images/Camera-Add.gif" title="Gif video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/Camera-Add.png" alt="Camera-Add" width="343" height="203" />　
 
 You can change the image size of the camera by entering the dimensions and clicking "Apply" if camera supports the specified image size.
 Somtimes it fails to change the image size. In that case, please close camera, wait for a moment, and try again.
@@ -141,7 +143,7 @@ In MocapForAll, click "Start" button under "Camera > Calibration > Intrinsic".
 Take images with the camera from various angles for about 10 seconds. If the camera is already fixed, move the image instead of the camera.  
 When calibration is completed, intrinsic parameters will be displayed on the app's screen and "Intrinsic  ☑Calibrated" will be shown.  
 
-![Camera-Calibration-Intrinsic-Execution]({{ site.url }}{{ site.baseurl }}/assets/images/Camera-Calibration-Intrinsic-Execution.gif)　
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/Camera-Calibration-Intrinsic-Execution.png" alt="Camera-Calibration-Intrinsic-Execution" width="640" height="360" />　
 
 Save the camera calibration result from "Save".
 
@@ -158,8 +160,8 @@ The procedure differs depending on the [4 methods to get extrinsic parameters](#
   
     If it does not read the AR marker properly, try [If the marker cannot be read properly](#if-the-marker-cannot-be-read-properly).
 
-    ![Camera-Calibration-Extrinsic-Execution-Charuco]({{ site.url }}{{ site.baseurl }}/assets/images/Camera-Calibration-Extrinsic-Execution-Charuco.gif)
-    
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/Camera-Calibration-Extrinsic-Execution-Charuco.png" alt="Camera-Calibration-Extrinsic-Execution-Charuco" width="640" height="360" />　
+
     
     
 2. Method using ArUco cluster   
@@ -174,8 +176,8 @@ The procedure differs depending on the [4 methods to get extrinsic parameters](#
     
     If it does not read the AR marker properly, try [If the marker cannot be read properly](#if-the-marker-cannot-be-read-properly).
     
-    ![Camera-Calibration-Extrinsic-Execution-Aruco]({{ site.url }}{{ site.baseurl }}/assets/images/Camera-Calibration-Extrinsic-Execution-Aruco.gif)
-    
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/Camera-Calibration-Extrinsic-Execution-Aruco.png" alt="Camera-Calibration-Extrinsic-Execution-Aruco" width="640" height="360" />　
+
     
     
 3. Method using Diamond cluster 
@@ -191,7 +193,7 @@ The procedure differs depending on the [4 methods to get extrinsic parameters](#
 
     Click "**Start**" under "Camera > Calibration > Extrinsic".  When calibration is completed, extrinsic parameters and the camera position will be displayed, and it will shows "Extrinsic  ☑Calibrated".  
 
-    ![Camera-Calibration-Extrinsic-Execution-Diamond]({{ site.url }}{{ site.baseurl }}/assets/images/Camera-Calibration-Extrinsic-Execution-Diamond.gif)
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/Camera-Calibration-Extrinsic-Execution-Diamond.png" alt="Camera-Calibration-Extrinsic-Execution-Diamond" width="640" height="360" />　
 
 
 
@@ -207,8 +209,7 @@ The procedure differs depending on the [4 methods to get extrinsic parameters](#
     
     After all cameras' extrinsic parameters calibrated, click the "**Find Ground**" button at the top of the window and walk around in the same way as [If the marker cannot be read properly](#if-the-marker-cannot-be-read-properly) described below. This will determine the absolute position of the cameras.  
     
-    ![Camera-Calibration-Extrinsic-Execution-Human]({{ site.url }}{{ site.baseurl }}/assets/images/Camera-Calibration-Extrinsic-Execution-Human.gif)
-    
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/Camera-Calibration-Extrinsic-Execution-Human.png" alt="Camera-Calibration-Extrinsic-Execution-Human" width="640" height="360" />　
 
 ### If the marker cannot be read properly
 
@@ -222,7 +223,7 @@ Procedure:
   Select "**Speed**" in "Settings > General > Capture body" if your PC's performance is enough for it. (If you have already installed the "Precision" mode in the Appendix, you can also use it.）  
 - Click the "**Find Ground**" button at the top of the window and walk around where at least 2 cameras can see your whole body. After a while, the position of the floor level will be adjusted automatically.  
 
-![Camera-Calibration-Extrinsic-Execution-FindGround]({{ site.url }}{{ site.baseurl }}/assets/images/Camera-Calibration-Extrinsic-Execution-FindGround.gif)
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/Camera-Calibration-Extrinsic-Execution-FindGround.png" alt="Camera-Calibration-Extrinsic-Execution-FindGround" width="640" height="360" />　
 
 ### Confirm the calibration results
 
@@ -237,4 +238,4 @@ After calibration is completed, save the calibration result of each camera by cl
 Also, you can save and load the whole camera setup by clicking "**Save All Cameras**" and "**Load All Cameras**" buttons.  
 Note that the camera selection is saved as an index inside the combo box. If you remove the cameras from your PC, the order of the cameras in the combo box will change and you will not be able to load the cameras properly.
 
-![Camera-Calibration-Save]({{ site.url }}{{ site.baseurl }}/assets/images/Camera-Calibration-Save.gif)
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/Camera-Calibration-Save.png" alt="Camera-Calibration-Save" width="640" height="360" />　
