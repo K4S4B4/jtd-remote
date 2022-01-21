@@ -10,6 +10,7 @@ nav_order: 1
 ## How to download
 ### Free trial version
 Free trial version is available on BOOTH.  
+
 [BOOTH store](https://akiya-souken.booth.pm/items/3026474){: .btn }  
 
 Before purchase, it is required to try free version and confirm that the software works without problems in your environment.   
@@ -21,6 +22,7 @@ In the free version, there are limitations on data export functions.
 ### Paid version
 Before purchase, please read and accept the terms and conditions from the following link.  
 If you agree, you can get your purchase password and proceed to the purchase page at BOOTH.  
+
 [Our HP](https://vrlab.akiya-souken.co.jp/product#buy){: .btn }  
 
 You need a pixiv account to purchase at BOOTH.
