@@ -111,7 +111,8 @@ Measure the height of your body. Put the value in "Settings > Calibration > Make
 Connect at least 2 cameras to your PC.  
 Click "Add camera" button at the top of the MocapForAll window.   
 Select the combo box next to "Camera:" to find the connected camera.   
- ![Camera-Add]({{ site.url }}{{ site.baseurl }}/assets/images/Camera-Add.gif)
+ <!-- ![Camera-Add]() -->
+<iframe width="400" height="315" class="table-wrapper py px" src="{{ site.url }}{{ site.baseurl }}/assets/images/Camera-Add.gif" title="Gif video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 You can change the image size of the camera by entering the dimensions and clicking "Apply" if camera supports the specified image size.
 Somtimes it fails to change the image size. In that case, please close camera, wait for a moment, and try again.
